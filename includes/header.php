@@ -25,6 +25,7 @@
                 <a href="index.php" class="<?php echo ($activePage == 'home') ? 'active' : ''; ?>">Home</a>
                 <a href="about.php" class="<?php echo ($activePage == 'about') ? 'active' : ''; ?>">About Us</a>
                 <a href="services.php" class="<?php echo ($activePage == 'services') ? 'active' : ''; ?>">Services</a>
+                <a href="resources.php" class="<?php echo ($activePage == 'resources') ? 'active' : ''; ?>">Resources</a>
                 <a href="contact.php" class="<?php echo ($activePage == 'contact') ? 'active' : ''; ?>">Contact</a>
             </nav>
         </div>
