@@ -41,6 +41,7 @@
                         <div>
                             <h4 style="margin-bottom: 0.5rem;">Email Us</h4>
                             <p style="color: #666;">info@abc.in</p>
+                            <p style="font-size: 0.9rem; color: #999;">(Looking for domain pricing? Check below)</p>
                         </div>
                     </div>
 

@@ -638,7 +638,7 @@ footer {
     opacity: 1;
 }
 
-/* Contact Form Redesign */
+/* Contact Form Redesign - Boxed Style */
 .modern-form .form-group {
     position: relative;
     margin-bottom: 2rem;
@@ -647,45 +647,110 @@ footer {
 .modern-form input,
 .modern-form textarea {
     width: 100%;
-    padding: 10px 0;
+    padding: 15px;
     font-size: 16px;
     color: #333;
-    margin-bottom: 5px;
-    border: none;
-    border-bottom: 2px solid #ddd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.modern-form input:focus,
+.modern-form textarea:focus {
+    border-color: var(--accent-color);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.1);
     outline: none;
-    background: transparent;
-    transition: border-color 0.3s;
 }
 
 .modern-form label {
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: 15px;
+    left: 15px;
     font-size: 16px;
-    color: #999;
+    color: #777;
     pointer-events: none;
     transition: 0.3s ease all;
 }
 
-.modern-form input:focus,
-.modern-form textarea:focus,
-.modern-form input:valid,
-.modern-form textarea:valid {
-    border-bottom-color: var(--accent-color);
-}
-
+/* Floating Label Logic */
 .modern-form input:focus~label,
 .modern-form textarea:focus~label,
-.modern-form input:valid~label,
-.modern-form textarea:valid~label {
-    top: -20px;
+.modern-form input:not(:placeholder-shown)~label,
+.modern-form textarea:not(:placeholder-shown)~label {
+    top: -12px;
+    left: 10px;
     font-size: 12px;
     color: var(--accent-color);
-    font-weight: bold;
+    background: white;
+    padding: 0 5px;
+    font-weight: 600;
 }
 
+/* =========================================
+   RESPONSIVENESS & MEDIA QUERIES
+   ========================================= */
+
+/* Tablet & Smaller Laptops */
+@media (max-width: 992px) {
+    .page-header h1 {
+        font-size: 3rem;
+    }
+
+    .timeline::after {
+        left: 50%;
+    }
+}
+
+/* Mobile Devices */
 @media (max-width: 768px) {
+
+    /* Navigation */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        padding: 1rem 0;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: white;
+    }
+
+    /* Layouts */
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    /* Timeline Mobile Fix */
     .timeline::after {
         left: 31px;
     }
@@ -694,6 +759,7 @@ footer {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
+        margin-bottom: 1.5rem;
     }
 
     .timeline-container::after {
@@ -702,5 +768,42 @@ footer {
 
     .timeline-container.right {
         left: 0%;
+    }
+
+    /* Flex Direction Flips */
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .service-card,
+    .project-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .cta-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta-group .btn {
+        margin-right: 0 !important;
     }
 }

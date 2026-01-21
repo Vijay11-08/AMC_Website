@@ -14,19 +14,8 @@
             <div style="max-width: 800px; margin: 0 auto; text-align: center;">
                 <h2 style="margin-bottom: 1.5rem;">Who We Are</h2>
                 <p style="font-size: 1.1rem; color: #555; margin-bottom: 2rem;">
-                    ABC Engineering & Consultancy is a technology-driven firm specializing in automation, control systems, and engineering design services for industrial applications.
+                    ABC Engineering & Consultancy is a technology-driven firm specializing in automation, control systems, and engineering design services for industrial applications. We bridge the gap between complex engineering challenges and practical, efficient solutions.
                 </p>
-                <div style="text-align: left; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 2rem;">
-                     <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Our Mission</h3>
-                     <p style="font-style: italic; color: #555; margin-bottom: 1.5rem;">"To deliver robust, efficient, and future-ready engineering solutions that improve productivity and reliability."</p>
-                     
-                     <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Our Values</h3>
-                     <ul style="list-style: none; padding: 0;">
-                         <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 10px;"></i> Engineering Excellence</li>
-                         <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 10px;"></i> Integrity & Transparency</li>
-                         <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 10px;"></i> Long-Term Partnerships</li>
-                     </ul>
-                </div>
                 <div style="height: 4px; width: 60px; background-color: var(--accent-color); margin: 0 auto;"></div>
             </div>
         </div>
