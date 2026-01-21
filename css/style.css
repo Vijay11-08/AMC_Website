@@ -1,0 +1,202 @@
+/* Global Settings & Variables */
+:root {
+    --primary-color: #0B1C3E; /* Dark Blue / Navy */
+    --secondary-color: #E5E5E5; /* Industrial Grey */
+    --accent-color: #FF6B00; /* Electric Orange */
+    --text-color: #333333;
+    --light-text: #FFFFFF;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --spacing-unit: 1rem;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: #F9F9F9;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: none;
+}
+
+.primary-btn {
+    background-color: var(--accent-color);
+    color: var(--light-text);
+}
+
+.primary-btn:hover {
+    background-color: #e65c00;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid var(--light-text);
+    color: var(--light-text);
+}
+
+.secondary-btn:hover {
+    background-color: var(--light-text);
+    color: var(--primary-color);
+}
+
+.section-padding {
+    padding: 4rem 0;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    color: var(--light-text);
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-color);
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #cccccc;
+    padding: 4rem 0 2rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-col h4 {
+    color: var(--light-text);
+    margin-bottom: 1.5rem;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--light-text);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.9rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Mobile menu handled by JS mostly, or we can use a checkbox hack, but plan says JS */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+}

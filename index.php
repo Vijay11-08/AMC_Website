@@ -1,0 +1,107 @@
+<?php $pageTitle = 'Home'; $activePage = 'home'; include 'includes/header.php'; ?>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(11, 28, 62, 0.85), rgba(11, 28, 62, 0.7)), url('images/hero_bg.png'); background-size: cover; background-position: center; height: 90vh; display: flex; align-items: center; color: white; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">Engineering Automation that Drives Performance</h1>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 2.5rem; color: #e0e0e0;">ABC Engineering & Consultancy delivers intelligent automation, control system design, and industrial engineering solutions tailored for modern manufacturing.</p>
+            <div class="cta-group">
+                <a href="contact.php" class="btn primary-btn" style="margin-right: 1rem;">Get a Consultation</a>
+                <a href="services.php" class="btn secondary-btn">View Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Snapshot -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Core Services</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
+                <!-- Service 1 -->
+                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s ease;">
+                    <i class="fas fa-robot" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1.5rem;"></i>
+                    <h3>Industrial Automation</h3>
+                    <p>Advanced PLC, HMI, and SCADA solutions for seamless manufacturing operations.</p>
+                </div>
+                <!-- Service 2 -->
+                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s ease;">
+                    <i class="fas fa-microchip" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1.5rem;"></i>
+                    <h3>Control Panel Design</h3>
+                    <p>Custom electrical schematics and panel layouts compliant with global standards.</p>
+                </div>
+                <!-- Service 3 -->
+                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s ease;">
+                    <i class="fas fa-drafting-compass" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1.5rem;"></i>
+                    <h3>Engineering Consultancy</h3>
+                    <p>Expert guidance on system architecture, safety implementation, and cost optimization.</p>
+                </div>
+                <!-- Service 4 -->
+                <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; transition: transform 0.3s ease;">
+                    <i class="fas fa-tools" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1.5rem;"></i>
+                    <h3>Commissioning & Support</h3>
+                    <p>On-site testing, debugging, and long-term technical support for your systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why ABC Section -->
+    <section class="section-padding" style="background-color: var(--primary-color); color: white;">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4rem;">
+                <div style="flex: 1;">
+                    <h2 style="color: white; margin-bottom: 2rem;">Why Choose ABC?</h2>
+                    <ul style="font-size: 1.1rem;">
+                        <li style="margin-bottom: 1.5rem; display: flex; align-items: center;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 1rem;"></i> Experienced Automation Engineers</li>
+                        <li style="margin-bottom: 1.5rem; display: flex; align-items: center;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 1rem;"></i> Industry-Focused Solutions</li>
+                        <li style="margin-bottom: 1.5rem; display: flex; align-items: center;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 1rem;"></i> Cost-Effective & Scalable Designs</li>
+                        <li style="margin-bottom: 1.5rem; display: flex; align-items: center;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 1rem;"></i> Strong Documentation & Support</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 8px; border-left: 5px solid var(--accent-color);">
+                    <h3 style="color: white; margin-bottom: 1rem;">Our Mission</h3>
+                    <p style="font-style: italic; font-size: 1.1rem; line-height: 1.8;">"To deliver robust, efficient, and future-ready engineering solutions that improve productivity and reliability."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Served -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Industries We Serve</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+                <span style="background: white; padding: 1rem 2rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 50px; font-weight: 500; border: 1px solid #eee;">CNC & Machine Tools</span>
+                <span style="background: white; padding: 1rem 2rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 50px; font-weight: 500; border: 1px solid #eee;">Manufacturing Plants</span>
+                <span style="background: white; padding: 1rem 2rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 50px; font-weight: 500; border: 1px solid #eee;">OEMs & System Integrators</span>
+                <span style="background: white; padding: 1rem 2rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 50px; font-weight: 500; border: 1px solid #eee;">Special Purpose Machines (SPM)</span>
+                <span style="background: white; padding: 1rem 2rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 50px; font-weight: 500; border: 1px solid #eee;">Process Automation</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos (New Section) -->
+    <section class="section-padding" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem; color: #777; font-weight: 500; font-size: 1.5rem;">Trusted By Leading Manufacturers</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; align-items: center; opacity: 0.6;">
+                <!-- Placeholder Logos -->
+                <div style="background: #e0e0e0; height: 80px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999;">CLIENT 1</div>
+                <div style="background: #e0e0e0; height: 80px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999;">CLIENT 2</div>
+                <div style="background: #e0e0e0; height: 80px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999;">CLIENT 3</div>
+                <div style="background: #e0e0e0; height: 80px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999;">CLIENT 4</div>
+                <div style="background: #e0e0e0; height: 80px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #999;">CLIENT 5</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="background-color: var(--secondary-color); padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h2 style="margin-bottom: 1rem;">Looking for a Reliable Automation Partner?</h2>
+            <p style="margin-bottom: 2rem; font-size: 1.1rem;">Let's discuss how we can engineer success for your business.</p>
+            <a href="contact.php" class="btn primary-btn">Talk to Our Engineers</a>
+        </div>
+    </section>
+
+<?php include 'includes/footer.php'; ?>
